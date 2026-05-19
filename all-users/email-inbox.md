@@ -1,0 +1,3 @@
+# Email Inbox
+
+> Coming soon
