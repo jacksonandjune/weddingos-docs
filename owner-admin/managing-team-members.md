@@ -72,7 +72,6 @@ To add a role rate, click **+ Add Role** and enter:
 
 This tab shows everyone who has a WeddingOS account. For each user you can see their:
 - **Profile** — their access level (Owner, Admin, or Planner) shown as a colored badge
-- **Compensation** — editable inline, same as Staff tab
 - **Google** — whether they've connected their Google account (green = connected, red = not connected)
 - **Joined** — when they accepted their invite
 
