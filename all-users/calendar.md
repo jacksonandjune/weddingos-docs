@@ -43,14 +43,26 @@ This makes it easy to see all meetings tied to a specific wedding from the clien
 
 ## Google Calendar sync
 
-With Google connected, the sync is bidirectional:
+With Google connected:
 
-- Events you create in WeddingOS appear in Google Calendar
-- Events in your Google Calendar appear in WeddingOS
+- Events you create in WeddingOS appear in your Google Calendar
+- Events in your Google Calendar appear in the **Meetings** tab on each client's detail page
 
 Each planner syncs their own Google Calendar independently. If a teammate hasn't connected Google, their events won't appear on the shared calendar.
 
 To connect Google, go to **Settings → Integrations**. See [Google Integration](../owner-admin/google-integration.md) for full setup instructions.
+
+---
+
+## Consultation auto-sync
+
+When you have Google connected, WeddingOS checks your calendar daily for newly added events. If an attendee's email matches a lead in your system, their status automatically advances to **Consultation Scheduled** — no manual update needed.
+
+This works with:
+- **Google Calendar Appointment Booking** — leads who book directly through your GCal booking page
+- **Calendly** — if you've connected Calendly under Settings → Integrations, bookings update status immediately instead of waiting for the daily sync
+
+See [Google Integration](../owner-admin/google-integration.md) for setup details.
 
 ---
 

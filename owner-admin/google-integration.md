@@ -46,6 +46,40 @@ This is an org-wide setting — it applies to all planners. Existing client fold
 
 ---
 
+## Consultation sync
+
+When Google is connected, WeddingOS automatically detects new consultation bookings from your Google Calendar and updates lead status accordingly.
+
+**How it works:** Once per day, WeddingOS checks your Google Calendar for newly added events. If an event's attendee email matches a lead in your system who is in **Lead** or **Contacted** status, their status automatically advances to **Consultation Scheduled** — including setting the consultation date, unenrolling them from any active email sequence, and logging the activity.
+
+This means if a lead books directly through your **Google Calendar Appointment Booking page**, their CRM record updates automatically overnight. No manual status change needed.
+
+---
+
+## Calendly integration
+
+If your team uses Calendly for consultation booking, you can connect it under **Settings → Integrations** to get the same automatic status updates.
+
+**What it does:** When a lead books through your Calendly link, their status in WeddingOS automatically advances to **Consultation Scheduled** — immediately, not on the next daily sync.
+
+**How to connect:**
+1. Go to **Settings → Integrations**
+2. Under **Calendly**, click **Connect Calendly**
+3. Sign in to your Calendly account and authorize the connection
+4. Done — the webhook is registered automatically
+
+**What happens on booking:**
+- Lead status → Consultation Scheduled
+- Consultation date stamped with the booked time
+- Lead unenrolled from any active email sequence
+- Activity logged on the lead's record
+
+**On cancellation:** If a lead cancels their Calendly booking, a note is logged on their record but status is not automatically reverted — your planner reviews and decides next steps.
+
+**Personal booking link:** You can also save your personal Calendly URL under Settings → Integrations. Use `{{calendlyLink}}` in email templates to insert it automatically.
+
+---
+
 ## Disconnecting Google
 
 Go to **Settings → Integrations → Google Workspace** and click **Disconnect**. This removes access to Gmail, Calendar, and Drive for your account. Other team members' connections are unaffected.

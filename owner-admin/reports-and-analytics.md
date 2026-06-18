@@ -1,65 +1,98 @@
 # Reports & Analytics
 
-The Analytics page tracks your sales performance over time -- how leads convert, where they come from, and how your business is growing. Find it in the left navigation under **Analytics**.
+The Analytics page tracks your sales pipeline performance — how leads convert, where they come from, and how each rep is performing. Find it in the left navigation under **Analytics**.
 
-> Analytics is only visible to owners and admins with the **can_edit_org_settings** permission.
+> Analytics is only visible to owners and admins.
+
+Revenue and payment data lives in **Financials**, not here. Analytics is focused entirely on the funnel.
 
 ---
 
 ## Date range
 
-Use the range selector at the top to view data for the last month, last quarter, last year, or all time. All charts and tables update together.
+Use the range selector at the top right to view data for the last 3 months, 6 months, 12 months, or year-to-date. All cards update together.
+
+---
+
+## Open pipeline
+
+The hero strip shows your current open pipeline — the total contract value of leads that are active but not yet booked (Consultation Scheduled, Proposal Sent). This tells you what's in play right now and helps you forecast forward.
 
 ---
 
 ## Conversion funnel
 
-A visual funnel showing how many leads moved through each stage:
+A visual funnel showing how many leads moved through each stage over the selected range:
 
 - Inquiries received
 - Consultations scheduled
 - Proposals sent
 - Booked
 
-The percentage between each step shows your conversion rate at that stage. If you're losing a lot between Proposal Sent and Booked, that points to a follow-up or pricing issue. If you're losing between Inquiry and Consultation, that's an initial response problem.
+The percentage between steps is your conversion rate at that stage. If you're losing between Proposal Sent and Booked, that's a follow-up or pricing issue. If you're losing between Inquiry and Consultation, that's an initial response problem.
+
+Below the funnel you'll find breakdowns by **Lead Source** and **Package** — click any source name or lead count to drill into the filtered leads list.
 
 ---
 
-## Revenue breakdown
+## Win rate
 
-Shows total revenue contracted and collected across the selected date range, broken down by month. Useful for spotting which months drive the most bookings and projecting future cash flow.
+Shown as a headline metric. Win rate is calculated as:
+
+**Booked ÷ (Booked + Lost)**
+
+This only counts closed opportunities — leads that reached a decision. Leads still in the pipeline don't affect win rate until they close.
 
 ---
 
-## Lead sources
+## Where leads leak
 
-A breakdown of where your booked clients came from -- Instagram, referral, The Knot, Google, website, etc. This reflects the **Lead Source** field you fill in when adding a lead.
+The **Where Leads Leak** section shows drop-off by Lead Source, Lead Stage, and Package. Use the pill switcher to toggle between views. Rows with significant lost lead counts are tinted to draw attention.
 
-Fill this in consistently and it becomes one of your most useful data points over time.
+---
+
+## Booking seasonality
+
+A chart showing how bookings and new inquiries distribute across months of the year. Useful for identifying your peak inquiry season and planning marketing spend around it.
 
 ---
 
 ## Package mix
 
-Shows how your bookings break down by package type. Useful for spotting if one package is carrying disproportionate weight or if you're underpricing a popular service.
-
----
-
-## Month-over-month trend
-
-A chart showing bookings and inquiries by month. Useful for identifying seasonal patterns and planning your marketing calendar.
+How your bookings break down by package type. Useful for spotting if one package carries disproportionate weight or if you're underserving demand for a particular tier.
 
 ---
 
 ## Velocity
 
-Average number of days from first inquiry to booking across your selected date range. This tells you how long your typical sales cycle is and whether it's getting faster or slower.
+Average number of days from first inquiry to booking over the selected range. Tracks whether your sales cycle is getting faster or slower.
 
 ---
 
-## Planner performance
+## Rep performance
 
-Shows bookings and revenue attributed to each planner across the selected range. Note that planners in WeddingOS are executors, not salespeople -- this view reflects assignment, not who closed the deal.
+A table showing sales results broken down by who closed the deal (based on the assigned planner at time of booking):
+
+| Column | What it shows |
+|---|---|
+| **Sales Rep** | Planner name |
+| **Leads** | Total leads assigned |
+| **Consult** | Consultations scheduled |
+| **Proposal** | Proposals sent |
+| **Booked** | Total bookings |
+| **Win %** | Booked ÷ (Booked + Lost) for closed deals |
+| **Avg Contract** | Average contract value of bookings |
+| **$ Closed** | Total contract value booked |
+
+This card only appears when there's data to show — it won't appear for brand-new accounts or when filtered ranges have no bookings.
+
+---
+
+## Analytics start date
+
+If your agency migrated from another tool, older historical data may skew your funnel conversion rates (e.g., if leads were imported without going through the full inquiry → consultation → proposal flow). You can set an analytics start date under **Settings → Agency Profile** to tell WeddingOS when your "real" data begins. Funnel stage metrics will only count leads created on or after that date.
+
+Volume metrics (total leads, win rate) still use all data regardless of start date.
 
 ---
 

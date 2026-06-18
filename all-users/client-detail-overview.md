@@ -17,10 +17,11 @@ Click any client's name from the **Clients** list, your dashboard, or anywhere t
 | **Details** | Core record — names, wedding date, venue, package, status, notes. Click any field to edit. |
 | **Emails** | Full email thread with this client. Send and receive messages without leaving WeddingOS. |
 | **Vendors** | Track every vendor involved — booked, researching, contract and payment status per vendor. |
-| **Docs** | Rich-text documents tied to this client. Export to their Google Drive folder. |
+| **Staff** | Assign team members to this wedding with their role and compensation details. |
+| **Checklist** | Planning checklist organized by phase. Track what's done and what's outstanding. |
+| **Docs** | Rich-text documents tied to this client — questionnaire responses, notes, planning docs. Export to their Google Drive folder. |
 | **Payments** | Payment schedule — amounts, due dates, paid/pending status. |
 | **Meetings** | Google Calendar events linked to this client. |
-| **Timeline** | Day-of timeline — build from a template, edit, share with the wedding party. |
 
 ---
 

@@ -1,6 +1,6 @@
 # Timelines
 
-The Timeline tab on a client's detail page is where you build and manage the day-of timeline for their wedding. Everything from getting ready through the reception lives here — organized by category, shareable with the wedding party, and exportable as a PDF.
+> **Note:** The Timeline tab is temporarily unavailable while we build a dedicated timeline experience. In the meantime, your team can manage day-of timelines directly in Google Drive or your preferred tool and attach them to the client's Docs tab. We'll update this documentation when it's back.
 
 ---
 
