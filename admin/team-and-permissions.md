@@ -1,4 +1,8 @@
-# Managing Team Members
+# Team & Permissions
+
+---
+
+## Managing Team Members
 
 **Settings → Team** is where you build your roster and control who has access to WeddingOS. There are two distinct concepts here that work together:
 
@@ -11,9 +15,9 @@ The page has three tabs: **Staff**, **Compensation**, and **Users with Login**.
 
 ---
 
-## Staff Tab
+### Staff Tab
 
-### Adding a Staff Member
+**Adding a Staff Member**
 
 Click **+ Add Staff Member** and fill in:
 
@@ -31,7 +35,7 @@ Click **+ Add Staff Member** and fill in:
 
 Click **Add Staff Member** to save. They'll immediately appear in the assignment dropdown on client records.
 
-### Importing Staff from CSV
+**Importing Staff from CSV**
 
 If you're migrating from another system or have a spreadsheet of your team, click **Import CSV**. Your file needs these columns (header names are flexible):
 
@@ -47,13 +51,13 @@ For `comp_type`, use `flat` or `flat_rate` for flat per-wedding, and `%` or `per
 
 After uploading, you'll see a preview of the rows before anything is imported. Rows missing a name are flagged in red and will be skipped.
 
-### Editing a Staff Member
+**Editing a Staff Member**
 
 From the Staff tab, click directly on any **Role** or **Compensation** value to edit it inline. Press Enter to save or Escape to cancel.
 
 ---
 
-## Compensation Tab
+### Compensation Tab
 
 The Compensation tab lets you set **org-wide default rates by role name**. These are used as the baseline when a staff member's individual comp rate is set to percentage with no fixed value.
 
@@ -62,20 +66,20 @@ For example: if "Bride Buddy" has a default of 5% of contract, any staff member 
 To add a role rate, click **+ Add Role** and enter:
 - **Role name** — must match the role title on the staff profile exactly (case-insensitive)
 - **Type** — flat $ per wedding, or % of contract
-- **Amount** — dollar amount or percentage (leave blank for "planner's own rate")
+- **Amount** — dollar amount or percentage
 
 > Role comp rates only affect future assignments. Past assignments keep the rate that was recorded at the time they were assigned.
 
 ---
 
-## Users with Login Tab
+### Users with Login Tab
 
 This tab shows everyone who has a WeddingOS account. For each user you can see their:
 - **Profile** — their access level (Owner, Admin, or Planner) shown as a colored badge
 - **Google** — whether they've connected their Google account (green = connected, red = not connected)
 - **Joined** — when they accepted their invite
 
-### Inviting a New User
+**Inviting a New User**
 
 Click **+ Invite Member** and fill in:
 
@@ -87,19 +91,19 @@ Click **+ Invite Member** and fill in:
 
 > To set fine-grained permissions (e.g. a planner who can also send proposals), use **Settings → Profiles** after they've accepted the invite.
 
-**Link to existing staff profile** — if this person is already in your Staff tab (e.g. you added them manually or via CSV import), select their name here. This connects their login to their existing staff profile so their name appears correctly and their compensation history is preserved. If you leave this blank, a new staff profile is created automatically when they accept.
+**Link to existing staff profile** — if this person is already in your Staff tab, select their name here. This connects their login to their existing staff profile so their name appears correctly and their compensation history is preserved. If you leave this blank, a new staff profile is created automatically when they accept.
 
 Click **Send Invite**. An email is sent to them with a link to set their password and activate their account. The invite link is valid for **30 days**.
 
-### What Happens When They Accept
+**What Happens When They Accept**
 
-When the team member clicks the link in their invite email, they'll be prompted to set a password. Once complete, they're logged in and their account appears in the Users with Login list. Their profile (Admin or Planner) controls what they can see and do from day one.
+When the team member clicks the link in their invite email, they'll be prompted to set a password. Once complete, they're logged in and their account appears in the Users with Login list. Their profile controls what they can see and do from day one.
 
 ---
 
-## Frequently Asked Questions
+### Team FAQs
 
-**Can I change someone's profile (Admin vs. Planner) after they've joined?**
+**Can I change someone's profile after they've joined?**
 Yes — go to **Settings → Profiles** where you can change their role and set custom permission overrides.
 
 **Someone left the team. How do I remove their access?**
@@ -112,8 +116,62 @@ Yes — generate a new invite from the Users with Login tab using the same email
 No — only users with a login count as seats.
 
 **Why does the Google column show red for some users?**
-They haven't connected their Google account yet. They can do that themselves at **Settings → Integrations**. Google is required to send email from Gmail, sync Calendar events, and auto-create Drive folders.
+They haven't connected their Google account yet. They can do that themselves at **Settings → Integrations**.
 
 ---
 
-*Next: [Roles and Permissions](roles-and-permissions.md)*
+## Roles and Permissions
+
+**Settings → Profiles** is where you control what each team member can see and do in WeddingOS. Every user has a **role** that determines their access — change the role, change the permissions.
+
+---
+
+### The Four Roles
+
+| Role | Who it's for |
+|---|---|
+| **Owner** | Full access to everything, no exceptions. Can grant/revoke Owner status for others. |
+| **Admin** | Same access as Owner except they can't promote others to Owner. Use this for your business partner, office manager, or anyone who runs the day-to-day. |
+| **Planner** | Can work their assigned clients — edit details, send emails, manage vendors and documents. Can't see unassigned clients, send proposals, manage payments, or touch settings. |
+| **Assistant** | Can view and manage documents only. Use for coordinators-in-training or interns. |
+
+---
+
+### Permissions by Role
+
+| Permission | Owner | Admin | Planner | Assistant |
+|---|---|---|---|---|
+| View all clients | ✓ | ✓ | — | — |
+| Manage clients | ✓ | ✓ | ✓ | — |
+| Send proposals | ✓ | ✓ | — | — |
+| Manage client payments | ✓ | ✓ | — | — |
+| Manage vendors | ✓ | ✓ | ✓ | — |
+| Track vendor payments | ✓ | ✓ | ✓ | — |
+| Manage documents | ✓ | ✓ | ✓ | ✓ |
+| Send emails | ✓ | ✓ | ✓ | — |
+| Edit org settings | ✓ | ✓ | — | — |
+| Edit packages & pricing | ✓ | ✓ | — | — |
+| Edit payment schedules | ✓ | ✓ | — | — |
+| Edit email templates | ✓ | ✓ | — | — |
+| Manage team | ✓ | ✓ | — | — |
+
+---
+
+### Changing a User's Role
+
+On the Profiles page, find the user and use the dropdown to switch between **Admin**, **Planner**, and **Assistant**. Changes take effect immediately.
+
+Only an Owner can grant or revoke the Owner role — and you can't change your own role.
+
+---
+
+### Permissions FAQs
+
+**Can I give a planner access to send proposals without making them an Admin?**
+Not currently — if a planner needs proposal access, promote them to Admin.
+
+**A planner says they can't see a client. Why?**
+Planners only see clients they're assigned to. Go to the client's Details tab and assign the planner there.
+
+**Can I see what a specific user can do at a glance?**
+Yes — the Profiles page shows each user's full permission set based on their role, with green checkmarks for what's allowed.
